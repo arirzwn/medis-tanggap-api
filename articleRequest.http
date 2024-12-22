@@ -1,0 +1,34 @@
+### Create a new article
+POST http://localhost:5000/api/articles
+Content-Type: application/json
+
+{
+  "title": "Panduan Sederhana Menjaga Pola Makan Sehat untuk Hidup Lebih Berkualitas n Sehat untuk Hidup Lebih Berkual",
+  "author": "Fulan",
+  "date": "2023-10-01",
+  "header": "Apa itu Anemia?",
+  "description": "Anemia adalah kondisi medis yang ditandai dengan kekurangan sel darah merah atau hemoglobin dalam darah, yang berfungsi untuk mengangkut oksigen ke seluruh tubuh. Akibatnya, tubuh tidak mendapatkan cukup oksigen yang dibutuhkan untuk berfungsi dengan baik.",
+  "image": null
+}
+
+### Get all articles
+GET http://localhost:5000/api/articles
+
+### Get a single article by ID
+GET http://localhost:5000/api/articles/1
+
+### Update an article by ID
+PUT http://localhost:5000/api/articles/1
+Content-Type: application/json
+
+{
+  "title": "Updated Sample Article",
+  "author": "Jane Doe",
+  "date": "2023-10-02",
+  "header": "This is an updated sample header",
+  "description": "This is an updated sample description",
+  "image": null
+}
+
+### Delete an article by ID
+DELETE http://localhost:5000/api/articles/1

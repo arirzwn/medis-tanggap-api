@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJmdWxhbiIsInBob25lIjoiMDgxMzE5MDU2MDQwIiwiZW1haWwiOiJmdWxhbkBnbWFpbC5jb20iLCJpYXQiOjE3MzMzMzE0OTcsImV4cCI6MTczMzMzMTUxN30.YKeqR0-wMS8CYnPPeq1uK7RCaKK1V8OGZrRwOi1GG2A
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "fulan 2",
+    "phone": "08131905604",
+    "email": "fulan2@gmail.com",
+    "password":"123456",
+    "confirmPassword":"123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "fulan@gmail.com" ,
+    "password" : "123456"
+}
+
+###
+
+GET http://localhost:5000/token
+
+
+###
+
+DELETE  http://localhost:5000/logout

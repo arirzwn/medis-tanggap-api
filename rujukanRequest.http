@@ -1,0 +1,43 @@
+### Get all rujukan
+GET http://localhost:5000/api/rujukan
+Content-Type: application/json
+
+### Get rujukan by ID
+GET http://localhost:5000/api/rujukan/3
+Content-Type: application/json
+
+### Get today's rujukan count
+GET http://localhost:5000/api/rujukan/count/today
+Content-Type: application/json
+
+### Create new rujukan
+POST http://localhost:5000/api/rujukan
+Content-Type: application/json
+
+{
+    "no_rujukan": "20231205-0002",
+    "tanggal": "2023-12-05",
+    "rs_tujuan": "RS Sehat Sentosa",
+    "no_kartu": "3304123456789",
+    "name_patient": "John Doe",
+    "gender": "Laki-laki",
+    "birthday_date": "1990-01-01",
+    "address": "Jl. Contoh No. 123, Kota",
+    "diagnosis": "Fever",   
+    "description": "Patient shows symptoms of high fever and fatigue",
+    "doctor": "Dr. Jane Smith"
+}
+
+### Update rujukan
+PATCH http://localhost:5000/api/rujukan/1
+Content-Type: application/json
+
+{
+    "diagnosis": "Fever and Flu",
+    "description": "Patient shows symptoms of high fever, fatigue, and running nose",
+    "doctor": "Dr. Jane Smith"
+}
+
+### Delete rujukan
+DELETE http://localhost:5000/api/rujukan/1
+Content-Type: application/json
