@@ -29,7 +29,7 @@ Content-Type: application/json
 }
 
 ### Update rujukan
-PATCH http://localhost:5000/api/rujukan/1
+PATCH http://localhost:5000/api/rujukan/2
 Content-Type: application/json
 
 {
